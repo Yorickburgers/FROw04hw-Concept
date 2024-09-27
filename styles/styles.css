@@ -229,11 +229,64 @@ button {
 
 /* --------------- 4.4 Services ----------------------- */
 
+.services-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 2rem;
+    column-gap: 2rem;
+    max-width: 1200px;
+    min-width: 400px;
+    margin: 6rem;
+}
 
+.service-tile {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 300px;
+    height: 300px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    border: solid 1px var(--purple);
+    padding: 2rem;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25)
+}
+
+.icon-wrapper {
+    width: 70px;
+    flex-grow: 0;
+    flex-shrink: 1;
+}
+
+.icon-wrapper img {
+    width: 100%;
+}
+
+.service-tile h3 {
+    color: var(--purple);
+    margin: 1rem 0;
+}
+
+.service-tile p {
+    font-size: 12px;
+    color: var(--grey);
+}
 
 /* --------------- 4.5 Contact ----------------------- */
 
 /* --------------- 4.6 Footer ----------------------- */
+footer {
+    background-color: var(--black);
+}
+
+footer p {
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    padding: 1rem;
+}
 
 /* ------------------------------- 5. Media Queries -------------------------------- */
 
